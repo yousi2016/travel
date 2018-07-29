@@ -305,45 +305,65 @@ origin  git@github.com:yousi2016/travel.git (push)<br/>
 git diff master github/master
 
 1.项目预热：
-	1.单文件组件与Vue中的路由
-		1.删掉components文件夹，创建pages->home->Home.vue
-		2.创建pages->list->List.vue(注意不要用tab缩进，用空格可以)
-		3.
-	2.单页应用VS多页应用
+	1.单文件组件与Vue中的路由<br/>
+		1.删掉components文件夹，创建pages->home->Home.vue<br/>
+		2.创建pages->list->List.vue(注意不要用tab缩进，用空格可以)<br/>
+		
+	2.单页应用VS多页应用<br/>
 		单页应用原理：根据路径不同，前端通过js路由感知到URL的变化，通过js动态的将当前页面内容清除掉，然后将另一个页面的内容挂在到页面上
-		这样只会向服务器发一次请求哦
-		http://localhost:8080/页面保存后会自动刷新
-	3.项目代码初始化
-		1.删除assets里面logo.png
-		2.在assets下面新建styles->reset.css(重置样式)
-		 	在main.js里面引入：import './assets/styles/reset.css'
-		3.在assets下面新建styles->border.css(解决1px在不同屏幕下显示不一样的问题)
-			在main.js里面引入：import './assets/styles/border.css'
-		4.停一下服务：clear
-		5.安装fastclick(解决移动端click点击延迟300ms的问题)
-			1.先安装cnpm：npm install -g cnpm --registry=https://registry.npm.taobao.org
-			2.cnpm install fastclick --save(--save不管是开发环境还是线上版本代码都需要使用fastclick)
-			3.import fastClick from 'fastclick'
-		6.移动端流行的开发技术：iconfont
-			1.打开网站：http://www.iconfont.cn
-			2.点击图标管理->我的项目->新建项目
-		7.删掉router下index.js里面的
-			import List from '@/pages/list/List'
-			, {
-		      path: '/list',
-		      name: 'List',
-		      component: List
-		    }
-		  删掉pages->list
-		 删掉home->Home.vue里面的：
-		 	<div class='home'>home</div>
-    		<router-link to='/list' class='home'>列表页</router-link>
-    		.home {
-			   font-size: 50px;
+		这样只会向服务器发一次请求哦<br/>
+		http://localhost:8080/页面保存后会自动刷新<br/>
+	3.项目代码初始化<br/><br/>
+		1.删除assets里面logo.png<br/><br/>
+		2.在assets下面新建styles->reset.css(重置样式)<br/>
+		 	在main.js里面引入：import './assets/styles/reset.css'<br/>
+		3.在assets下面新建styles->border.css(解决1px在不同屏幕下显示不一样的问题)<br/>
+			在main.js里面引入：import './assets/styles/border.css'<br/>
+		4.停一下服务：clear<br/>
+		5.安装fastclick(解决移动端click点击延迟300ms的问题)<br/>
+			1.先安装cnpm：npm install -g cnpm --registry=https://registry.npm.taobao.org<br/>
+			2.cnpm install fastclick --save(--save不管是开发环境还是线上版本代码都需要使用fastclick)<br/>
+			3.import fastClick from 'fastclick'<br/>
+		6.移动端流行的开发技术：iconfont<br/>
+			1.打开网站：http://www.iconfont.cn<br/>
+			2.点击图标管理->我的项目->新建项目<br/>
+		7.删掉router下index.js里面的<br/>
+			import List from '@/pages/list/List'<br/>
+			, {<br/>
+		      path: '/list',<br/>
+		      name: 'List',<br/>
+		      component: List<br/>
+		    }<br/>
+		  删掉pages->list<br/>
+		 删掉home->Home.vue里面的：<br/>
+		 	<div class='home'>home</div><br/>
+    		<router-link to='/list' class='home'>列表页</router-link><br/>
+    		.home {<br/>
+			   font-size: 50px;<br/>
 			}
-		8.将travel上传到github和gitee上
-			1.clear
-			2.
+		8.将travel上传到github和gitee上<br/>
+			1.clear<br/>
+			2.在GitHub上新建一个travel项目<br/>
+			3.git clone https://github.com/yousi2016/travel.git<br/>
+			4.git add .<br/>
+			5.git commit -m 'project init'<br/>
+			6.git remote -v<br/>
+				origin  https://github.com/yousi2016/travel.git (fetch)<br/>
+				origin  https://github.com/yousi2016/travel.git (push)<br/>
+			7.git remote rm origin<br/>
+			8.git remote add github git@github.com:yousi2016/travel.git<br/>
+			9.git remote add gitee git@gitee.com:frontEndArchitect/travel.git<br/>
+			10.git remote -v<br/>
+				gitee   git@gitee.com:frontEndArchitect/travel.git (fetch)<br/>
+				gitee   git@gitee.com:frontEndArchitect/travel.git (push)<br/>
+				github  git@github.com:yousi2016/travel.git (fetch)<br/>
+				github  git@github.com:yousi2016/travel.git (push)<br/>
+			11. git push github master<br/>
+
+
+	
+
+
 
 
 
