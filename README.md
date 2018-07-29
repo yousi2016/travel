@@ -304,10 +304,10 @@ origin  git@github.com:yousi2016/travel.git (push)
 16.查看远程仓库和本地仓库异同：
 git diff master github/master
 
-1.项目预热：
-	1.单文件组件与Vue中的路由
-		1.删掉components文件夹，创建pages->home->Home.vue
-		2.创建pages->list->List.vue(注意不要用tab缩进，用空格可以)
+1.项目预热：<br/>
+	1.单文件组件与Vue中的路由<br/>
+		1.删掉components文件夹，创建pages->home->Home.vue<br/>
+		2.创建pages->list->List.vue(注意不要用tab缩进，用空格可以)<br/>
 		
 	2.单页应用VS多页应用
 		单页应用原理：根据路径不同，前端通过js路由感知到URL的变化，通过js动态的将当前页面内容清除掉，然后将另一个页面的内容挂在到页面上
@@ -359,10 +359,9 @@ git diff master github/master
 				github  git@github.com:yousi2016/travel.git (fetch)
 				github  git@github.com:yousi2016/travel.git (push)
 			11. git push github master
-			
 			12.从github将travel项目导入到gitee中
-			
 			13.git push gitee master
+			14.
 			
 			
 
