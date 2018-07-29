@@ -304,7 +304,7 @@ origin  git@github.com:yousi2016/travel.git (push)<br/>
 16.查看远程仓库和本地仓库异同：<br/>
 git diff master github/master
 
-1.项目预热：
+1.项目预热：<br/>
 	1.单文件组件与Vue中的路由<br/>
 		1.删掉components文件夹，创建pages->home->Home.vue<br/>
 		2.创建pages->list->List.vue(注意不要用tab缩进，用空格可以)<br/>
