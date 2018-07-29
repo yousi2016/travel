@@ -11,11 +11,11 @@ vue2.5开发去哪网app
 
 #### 安装教程
 
-1.到官网下载安装node<br/>
-2.注册码云创建一个私有仓库存贮项目代码<br/>
-3.到官网下载安装git（gitbash是linnus的）小型环境<br/>
+1.到官网下载安装node
+2.注册码云创建一个私有仓库存贮项目代码
+3.到官网下载安装git（gitbash是linnus的）小型环境
 本地只有一个本地库，远程可以有多个，github一个，gitee一个哦
-操作git的问题：<br/>
+操作git的问题：
 	1.Administrator@TIZJMN9PAGN50M8 MINGW64 /d/imooc/vue/travel (master)
 		$ git remote -v
 		origin  https://github.com/yousi2016/travel.git (fetch)
@@ -105,9 +105,9 @@ vue2.5开发去哪网app
 		   9e44c2e..44b55f4  master -> master
 
 
-4.安装vue-cli脚手架工具：npm install --global vue-cli<br/>
-5.创建一个基于webpack模板的新项目:vue init webpack travel<br/>
-6.如果出现以下信息，说明安装依赖成功：<br/>
+4.安装vue-cli脚手架工具：npm install --global vue-cli
+5.创建一个基于webpack模板的新项目:vue init webpack travel
+6.如果出现以下信息，说明安装依赖成功：
  Project name (travel)
 ? Project name travel
 ? Project description (A Vue.js project)
@@ -163,14 +163,14 @@ To get started:
   cd travel
   npm run dev
 
-Documentation can be found at https://vuejs-templates.github.io/webpack<br/>
+Documentation can be found at https://vuejs-templates.github.io/webpack
 
 7.$ git status
 fatal: not a git repository (or any of the parent directories): .git
 
 Administrator@TIZJMN9PAGN50M8 MINGW64 /d/imooc/vue/travel
 $ git init
-Initialized empty Git repository in D:/imooc/vue/travel/.git/<br/>
+Initialized empty Git repository in D:/imooc/vue/travel/.git/
 8.add和commit到本地仓库
 nothing added to commit but untracked files present (use "git add" to track)
 
@@ -256,9 +256,9 @@ $ git commit -m 'add travel'
  create mode 100644 src/components/HelloWorld.vue
  create mode 100644 src/main.js
  create mode 100644 src/router/index.js
- create mode 100644 static/.gitkeep<br/>
+ create mode 100644 static/.gitkeep
 
-9.将本地库和远程库关联：$ git remote add origin git@github.com:yousi2016/travel.git<br/>
+9.将本地库和远程库关联：$ git remote add origin git@github.com:yousi2016/travel.git
 
 10.第一次push到远程库出问题：
 $ git push -u origin master
@@ -280,47 +280,47 @@ Unpacking objects: 100% (3/3), done.
 From github.com:yousi2016/travel
  * branch            master     -> FETCH_HEAD
  * [new branch]      master     -> origin/master
-fatal: refusing to merge unrelated histories<br/>
+fatal: refusing to merge unrelated histories
 
 
 11.可以看到，本地库已经关联了origin的远程库，并且，该远程库指向GitHub。
 $ git remote -v
 origin  git@github.com:yousi2016/travel.git (fetch)
-origin  git@github.com:yousi2016/travel.git (push)<br/>
+origin  git@github.com:yousi2016/travel.git (push)
 
-12.我们可以删除已有的GitHub远程库：<br/>
-    git remote rm origin<br/>
+12.我们可以删除已有的GitHub远程库：
+    git remote rm origin
 13.给远程库另起名字：
-	git remote add github git@github.com:michaelliao/learngit.git<br/>
+	git remote add github git@github.com:michaelliao/learngit.git
 
-14. 出现：输入wq即可<br/>
+14. 出现：输入wq即可
 
-15.如果从gitee上clone下的仓库，传不到github上，那只需要做两个步骤：<br/>
+15.如果从gitee上clone下的仓库，传不到github上，那只需要做两个步骤：
 
 	1.git fetch github master
 	
 	2.git merge github/master
 	
-16.查看远程仓库和本地仓库异同：<br/>
+16.查看远程仓库和本地仓库异同：
 git diff master github/master
 
-##1.项目预热：
-	*1.单文件组件与Vue中的路由
-		+1.删掉components文件夹，创建pages->home->Home.vue
-		+2.创建pages->list->List.vue(注意不要用tab缩进，用空格可以)
+1.项目预热：
+	1.单文件组件与Vue中的路由
+		1.删掉components文件夹，创建pages->home->Home.vue
+		2.创建pages->list->List.vue(注意不要用tab缩进，用空格可以)
 		
-	*2.单页应用VS多页应用
-		+单页应用原理：根据路径不同，前端通过js路由感知到URL的变化，通过js动态的将当前页面内容清除掉，然后将另一个页面的内容挂在到页面上
-		+这样只会向服务器发一次请求哦
-		+http://localhost:8080/页面保存后会自动刷新
-	*3.项目代码初始化
-		+1.删除assets里面logo.png
-		+2.在assets下面新建styles->reset.css(重置样式)
+	2.单页应用VS多页应用
+		单页应用原理：根据路径不同，前端通过js路由感知到URL的变化，通过js动态的将当前页面内容清除掉，然后将另一个页面的内容挂在到页面上
+		这样只会向服务器发一次请求哦
+		http://localhost:8080/页面保存后会自动刷新
+	3.项目代码初始化
+		1.删除assets里面logo.png
+		2.在assets下面新建styles->reset.css(重置样式)
 		 	在main.js里面引入：import './assets/styles/reset.css'
-		+3.在assets下面新建styles->border.css(解决1px在不同屏幕下显示不一样的问题)
+		3.在assets下面新建styles->border.css(解决1px在不同屏幕下显示不一样的问题)
 			在main.js里面引入：import './assets/styles/border.css'
-		+4.停一下服务：clear
-		+5.安装fastclick(解决移动端click点击延迟300ms的问题)
+		4.停一下服务：clear
+		5.安装fastclick(解决移动端click点击延迟300ms的问题)
 			1.先安装cnpm：npm install -g cnpm --registry=https://registry.npm.taobao.org
 			2.cnpm install fastclick --save(--save不管是开发环境还是线上版本代码都需要使用fastclick)
 			3.import fastClick from 'fastclick'
