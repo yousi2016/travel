@@ -304,7 +304,7 @@ origin  git@github.com:yousi2016/travel.git (push)
 16.查看远程仓库和本地仓库异同：
 git diff master github/master
 
-1.项目预热：<br/>
+一.项目预热：<br/>
 	1.单文件组件与Vue中的路由<br/>
 		1.删掉components文件夹，创建pages->home->Home.vue<br/>
 		2.创建pages->list->List.vue(注意不要用tab缩进，用空格可以)<br/>
@@ -361,7 +361,27 @@ git diff master github/master
 			11. git push github master
 			12.从github将travel项目导入到gitee中
 			13.git push gitee master
-			14.
+二.项目实战 - 旅游网站首页开发
+	1.Vue项目首页 - header区域开发
+		1.安装css的预处理框架stylus（相当于less）：cnpm install stylus --save
+			如果显示如下就说明已经成功安装：
+			√ Installed 1 packages
+			√ Linked 19 latest versions
+			√ Run 0 scripts
+			√ All packages installed (20 packages installed from npm registry, used 2s(network 2s), speed 262.26kB/s, json 20(224.64kB), tarball 277.58kB)
+	
+		2.安装stylus-loader:
+			cnpm install stylus-loader --save
+		3.npm run dev
+			如果报错：（删除index.js里面多余的空格）
+			✘  http://eslint.org/docs/rules/no-multiple-empty-lines  More than 1 blank line not allowed
+			src\router\index.js:4:1
+		4.缩进规则一定要是两个space空格键
+		
+		5.在src>pages>home>components新建一个Header.vue
+			
+  				
+
 			
 			
 
