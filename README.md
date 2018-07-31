@@ -361,14 +361,14 @@ git diff master github/master
 			11. git push github master
 			12.从github将travel项目导入到gitee中
 			13.git push gitee master
-二.项目实战 - 旅游网站首页开发
-	1.Vue项目首页 - header区域开发
-		1.安装css的预处理框架stylus（相当于less）：cnpm install stylus --save
-			如果显示如下就说明已经成功安装：
-			√ Installed 1 packages
-			√ Linked 19 latest versions
-			√ Run 0 scripts
-			√ All packages installed (20 packages installed from npm registry, used 2s(network 2s), speed 262.26kB/s, json 20(224.64kB), tarball 277.58kB)
+二.项目实战 - 旅游网站首页开发<br/>
+	1.Vue项目首页 - header区域开发<br/>
+		1.安装css的预处理框架stylus（相当于less）：cnpm install stylus --save<br/>
+			如果显示如下就说明已经成功安装：<br/>
+			√ Installed 1 packages<br/>
+			√ Linked 19 latest versions<br/>
+			√ Run 0 scripts<br/>
+			√ All packages installed (20 packages installed from npm registry, used 2s(network 2s), speed 262.26kB/s, json 20(224.64kB), tarball 277.58kB)<br/>
 	
 		2.安装stylus-loader:
 			cnpm install stylus-loader --save
