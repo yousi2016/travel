@@ -379,6 +379,25 @@ git diff master github/master
 		4.缩进规则一定要是两个space空格键
 		
 		5.在src>pages>home>components新建一个Header.vue
+		
+	Vue项目首页 - iconfont 的使用和代码优化
+		1.打开：http://iconfont.cn
+		2.图标库-》官网图标库-》大麦官方图标库
+		3.将返回，搜索，箭头图标加入购物车
+		4.到购物车添加到项目travel即可
+		5.然后到我发起的项目travel下面点击下载至本地，解压后
+		6.在src-》assets-》styles-》新建文件夹iconfont
+		7.然后将解压到本地的四个字体文件iconfont.eot, iconfont.svg, iconfont.ttf, iconfont.woff放到
+		    文件夹iconfont下面
+		8.将iconfont.css放到styles文件夹中
+		9.修改iconfont.css里面引入的字体路径
+		10.在main.js里面引入iconfont.css
+			import './assets/styles/iconfont.css'
+		11.在Header.vue里面使用iconfont
+			<span class="iconfont"></span>
+			然后在span里面写一个16进制的串（去iconfont.cn下面自己项目下的字体图标去复制即可）
+		12.在styles下面新建varibles.styl
+			全局变量$bgColor = #00bcd4
 			
   				
 
