@@ -18,9 +18,8 @@ export default {
   name: 'HomeHeader'
 }
 </script>
-<!--在style标签上添加scoped属性，以表示它的样式作用于当下的模块，很好的实现了样式私有化的目的，这是一个非常好的机制-->
 <style lang="stylus" scoped>
-@import '../../../assets/styles/varibles.styl'
+@import '~styles/varibles.styl'
   .header
     display: flex
     line-height: .86rem

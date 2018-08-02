@@ -398,6 +398,22 @@ git diff master github/master
 			然后在span里面写一个16进制的串（去iconfont.cn下面自己项目下的字体图标去复制即可）
 		12.在styles下面新建varibles.styl
 			全局变量$bgColor = #00bcd4
+			引入：@import '../../../assets/styles/varibles.styl'
+			或者：@import '~@/assets/styles/varibles.styl'
+			@:代表src目录
+			<!--在style标签上添加scoped属性，以表示它的样式作用于当下的模块，很好的实现了样式私有化的目的，这是一个非常好的机制-->
+			<style lang="stylus" scoped>
+		13.修改webpack.base.conf.js里面的
+			resolve: {
+			    extensions: ['.js', '.vue', '.json'],
+			    alias: {
+			      '@': resolve('src'),
+			      //styles:代表：src/assets/styles
+			      'styles':resolve('src/assets/styles')
+			    }
+			  }
+			修改后如果报错，那就重启服务器：npm run dev
+		14.
 			
   				
 
