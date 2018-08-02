@@ -418,6 +418,9 @@ git diff master github/master
 		2.git branch
 			* index-swiper
 			  master
+		3.打开https://github.com/surmon-china/vue-awesome-swiper
+		
+		4.cnpm install vue-awesome-swiper@2.6.7 --save
 
 			
   				
