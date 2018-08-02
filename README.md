@@ -413,7 +413,12 @@ git diff master github/master
 			    }
 			  }
 			修改后如果报错，那就重启服务器：npm run dev
-		14.
+	Vue项目首页 - 首页轮播图
+		1.创建index-swiper分支，然后切换到index-swiper分支：git checkout -b index-swiper
+		2.git branch
+			* index-swiper
+			  master
+
 			
   				
 
