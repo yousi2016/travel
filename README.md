@@ -456,6 +456,8 @@ git diff master github/master
    				 background: #fff	
    		11.循环图片
    		   loop:true	
+   	Vue项目首页 - 图标区域页面布局
+   		1.
 		
 			
   				
