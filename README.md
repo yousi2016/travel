@@ -421,7 +421,44 @@ git diff master github/master
 		3.打开https://github.com/surmon-china/vue-awesome-swiper
 		
 		4.cnpm install vue-awesome-swiper@2.6.7 --save
-
+		5.重启服务器：npm run dev
+		6.在main.js下面这样写：
+			import Vue from 'vue'
+			//全局引入
+			import VueAwesomeSwiper from 'vue-awesome-swiper'
+			
+			// require styles
+			import 'swiper/dist/css/swiper.css'
+			
+			Vue.use(VueAwesomeSwiper, /* { default global options } */)
+		7.在pages->home->components->新建Swiper.vue
+		8.在Home.vue里面引入：import HomeSwiper from './components/Swiper'
+		9.在Home.vue添加<div>test</div>用来测试在3g网络下轮播图片还没加载出来没有高度抖动的情况
+			<template>
+			  <div>
+			    <home-header></home-header>
+			    <home-swiper></home-swiper>
+			    <div>test</div>
+			  </div>
+			</template>
+			解决办法：
+			html:首先在Swiper.vue的标签swiper最外层添加div.wrapper
+			css:overflow: hidden
+			    width: 100%
+			    height: 0
+			    padding-bottom: 31.25%
+		10.添加轮播小圆点
+			swiperOption: {
+		      	pagination: '.swiper-pagination'
+		      }	
+		    避开scoped的干扰
+		    .wrapper >>> .swiper-pagination-bullet-active
+   				 background: #fff	
+   		11.循环图片
+   		   loop:true	
+   	Vue项目首页 - 图标区域页面布局
+   		1.
+		
 			
   				
 
