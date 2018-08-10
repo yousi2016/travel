@@ -456,9 +456,20 @@ git diff master github/master
    				 background: #fff	
    		11.循环图片
    		   loop:true	
-   	Vue项目首页 - 图标区域页面布局
-   		1.
 
+	Vue项目首页 - 图标区域页面布局
+		1.创建新的分支并且切换到此分支： git checkout -b index-icons
+		2.github会自动将本地新建的分支提交到线上，不用在线上再新建分支了
+			$ git push github index-icons
+			Counting objects: 6, done.
+			Delta compression using up to 4 threads.
+			Compressing objects: 100% (6/6), done.
+			Writing objects: 100% (6/6), 670 bytes | 0 bytes/s, done.
+			Total 6 (delta 4), reused 0 (delta 0)
+			remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+			To git@github.com:yousi2016/travel.git
+			 * [new branch]      index-icons -> index-icons
+		3、切换到master分支前必须先提交到本地index-icons分支，否则切换会报错
 		
 			
   				
