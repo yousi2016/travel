@@ -1,7 +1,9 @@
 # travel
 vue2.5开发去哪网app
+https://piao.qunar.com/touch/
 # travel
 项目下载地址：https://git.imooc.com/yousi2016
+http://vuejs-templates.github.io/webpack/structure.html
 #### 项目介绍
 vue2.5开发去哪网app
 
@@ -468,7 +470,16 @@ git diff master github/master
 			remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
 			To git@github.com:yousi2016/travel.git
 			 * [new branch]      index-icons -> index-icons
-		3、切换到master分支前必须先提交到本地index-icons分支，否则切换会报错
+		3.切换到master分支前必须先提交到本地index-icons分支，否则切换会报错
+		4.在components下面新建一个Icons.vue
+		5.要想使用tab缩进两个空格，工具-选项-文编辑器-tab键宽度
+			
+		6.在Home.vue里面引入Icons.vue
+		
+	Vue项目首页 - 图标区域逻辑实现
+		1.
+
+		
 		
 			
   				
