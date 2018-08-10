@@ -457,7 +457,8 @@ git diff master github/master
    		11.循环图片
    		   loop:true	
 	Vue项目首页 - 图标区域页面布局
-		1.
+		1.创建新的分支并且切换到此分支： git checkout -b index-icons
+		2.
 		
 			
   				
