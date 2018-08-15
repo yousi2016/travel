@@ -24,7 +24,7 @@ export default {
       iconList: [{
         id: '0001',
         imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
+        desc: '景点门票景点门票景点门票景点门票景点门票'
       }, {
         id: '0002',
         imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
@@ -79,6 +79,7 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
+  @import '~styles/mixins.styl'
   .icons >>> .swiper-container
     height:0
     padding-bottom:50%
@@ -108,4 +109,5 @@ export default {
       line-height:.44rem
       text-align:center
       color:$darkTextColor
+      ellipsis()
 </style>
