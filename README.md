@@ -478,7 +478,11 @@ git diff master github/master
 		6.在Home.vue里面引入Icons.vue
 		
 	Vue项目首页 - 图标区域逻辑实现
-		1.
+		1.每当切换分支后都得重新启动服务器：npm run dev
+		2.翻墙在更多工具--扩展程序-chrome商店里面安装vue devtools
+			需要重启浏览器才会生效
+		3.在assets-styles新建mixins.styl
+
 
 		
 		
