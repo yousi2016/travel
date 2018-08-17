@@ -4,6 +4,8 @@ https://piao.qunar.com/touch/
 # travel
 项目下载地址：https://git.imooc.com/yousi2016
 http://vuejs-templates.github.io/webpack/structure.html
+摆脱令人抓狂的ESlint 语法检测配置说明：https://www.jianshu.com/p/0c7f1764d753
+这样在用Eslint的时候就会直接忽略低级语法报错了:https://blog.csdn.net/qq_15869645/article/details/79521900
 #### 项目介绍
 vue2.5开发去哪网app
 
@@ -483,7 +485,10 @@ git diff master github/master
 			需要重启浏览器才会生效
 		3.在assets-styles新建mixins.styl
 
-
+	Vue项目首页 - 热销推荐组件开发
+		1.在src-pages-home-components下新建Recommend.vue
+		2.在Home.vue里面引入
+		3.https://www.jianshu.com/p/0c7f1764d753
 		
 		
 			
