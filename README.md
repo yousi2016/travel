@@ -487,8 +487,13 @@ git diff master github/master
 
 	Vue项目首页 - 热销推荐组件开发
 		1.在src-pages-home-components下新建Recommend.vue
-		2.在Home.vue里面引入
+		2.在Home.vue里面引入Recommend.vue
 		3.https://www.jianshu.com/p/0c7f1764d753
+	
+	Vue项目首页 - 开发周末游组件
+	  1.在src-pages-home-components下新建Weekend.vue
+	  2.将Recommend.vue里面内容复制到Weekend.vue
+		3.在Home.vue里面引入Weekend.vue
 		
 		
 			
