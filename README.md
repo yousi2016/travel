@@ -494,6 +494,23 @@ git diff master github/master
 	  1.在src-pages-home-components下新建Weekend.vue
 	  2.将Recommend.vue里面内容复制到Weekend.vue
 		3.在Home.vue里面引入Weekend.vue
+	
+	Vue项目首页 - 使用 axios 发送 ajax 请求
+		1.首先安装axios：cnpm install axios --save
+		2.将ajax请求放到Home.vue里面,这样首页只需要向服务器发送一次请求，然后将返回的数据传到各个子组件即可
+		3.在static新建文件夹mock，在mock下新建index.json（只有放到static下面才可以直接访问路径）
+		4.是本地模拟数据，不添加到线上，需要在.gitignore文件里面添加static/mock即可
+		5.在config-index.js下写如：
+			proxyTable: {
+	    	'/api': {
+	    		target: 'http://localhost:8080',
+	    		pathRewrite: {
+	    			'^/api': '/static/mock'
+	    		}
+	    	}
+	    },
+	Vue项目首页 - 首页父子组组件间传值
+		 
 		
 		
 			
