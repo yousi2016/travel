@@ -510,6 +510,13 @@ git diff master github/master
 	    	}
 	    },
 	Vue项目首页 - 首页父子组组件间传值
+	
+	Vue项目城市选择页 - 路由配置
+	  1.在src-router-index.js下面配置路由
+	  2.在pages下创建city-City.vue
+	  3.在home-components-Header.vue加入<router-link to='/city'>
+	  4.在city下创建components-Header.vue
+	  
 		 
 		
 		
