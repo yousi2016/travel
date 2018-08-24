@@ -516,6 +516,9 @@ git diff master github/master
 	  2.在pages下创建city-City.vue
 	  3.在home-components-Header.vue加入<router-link to='/city'>
 	  4.在city下创建components-Header.vue
+	
+	 Vue项目城市选择页 - 搜索框布局
+	 	1.在pages-city-components-Search.vue
 	  
 		 
 		
