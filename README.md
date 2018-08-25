@@ -522,9 +522,12 @@ git diff master github/master
 	
 	Vue项目城市选择页 - 列表布局
 		1.在pages-city-components-List.vue
+		
 	Vue项目城市选择页 - BetterScroll 的使用和字母表布局
 		1.安装better-scroll:cnpm install better-scroll --save
 		2.在pages-city-components-Alphabet.vue
+		
+	Vue项目城市选择页 - 页面的动态数据渲染
 	
 	  
 		 
