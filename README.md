@@ -517,8 +517,15 @@ git diff master github/master
 	  3.在home-components-Header.vue加入<router-link to='/city'>
 	  4.在city下创建components-Header.vue
 	
-	 Vue项目城市选择页 - 搜索框布局
+	Vue项目城市选择页 - 搜索框布局
 	 	1.在pages-city-components-Search.vue
+	
+	Vue项目城市选择页 - 列表布局
+		1.在pages-city-components-List.vue
+	Vue项目城市选择页 - BetterScroll 的使用和字母表布局
+		1.安装better-scroll:cnpm install better-scroll --save
+		2.在pages-city-components-Alphabet.vue
+	
 	  
 		 
 		
