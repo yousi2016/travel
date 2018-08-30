@@ -532,7 +532,8 @@ git diff master github/master
 	Vue项目城市选择页 - 兄弟组件数据传递  
 		1.创建的分支city-components
 		2.先将Alphabet.vue的数据传递给City.vue，然后通过City.vue传递给List.vue
-		3.
+		
+	Vue项目城市选择页 - 列表性能优化
 		 
 		
 		
