@@ -534,6 +534,9 @@ git diff master github/master
 		2.先将Alphabet.vue的数据传递给City.vue，然后通过City.vue传递给List.vue
 		
 	Vue项目城市选择页 - 列表性能优化
+	
+	Vue项目城市选择页 - 搜索逻辑实现
+		1.避免在html模板里面写逻辑，最好写到js里
 		 
 		
 		
