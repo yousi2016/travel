@@ -537,6 +537,16 @@ git diff master github/master
 	
 	Vue项目城市选择页 - 搜索逻辑实现
 		1.避免在html模板里面写逻辑，最好写到js里
+	
+	Vue项目城市选择页 - Vuex实现数据共享（vue主要用于视图层，而vuex主要用于数据层）
+		1.安装vuex：cnpm install vuex --save
+		2.src-store-index.js
+		3.以前header是后端返回给前端的，现在直接放到前端即可
+	Vue项目城市选择页 - Vuex的高级使用及localStorage
+		1.try {}catch (e) {}判断用户是否开启本地存储功能
+		2.src-store-state.js
+		3.src-store-mutations.js
+		
 		 
 		
 		
