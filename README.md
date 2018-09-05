@@ -542,10 +542,18 @@ git diff master github/master
 		1.安装vuex：cnpm install vuex --save
 		2.src-store-index.js
 		3.以前header是后端返回给前端的，现在直接放到前端即可
+		
 	Vue项目城市选择页 - Vuex的高级使用及localStorage
 		1.try {}catch (e) {}判断用户是否开启本地存储功能
 		2.src-store-state.js
 		3.src-store-mutations.js
+	
+	Vue项目详情页 - 动态路由和banner布局
+		1.pages-detail-Detail.vue
+		1.pages-detail-components-Banner.vue
+		3.去http://iconfont.cn/manage/index?manage_type=myprojects&projectId=767957下载字体库
+		 将eot svg ttf woff替换src-assets-styles-iconfont下面的四个
+		4.src-common-gallary-Gallary.vue在common下面存放全局公用的组件，如果Gallary.vue变得很大的话，可以接着拆分成小的组件
 		
 		 
 		
