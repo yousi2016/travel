@@ -557,6 +557,8 @@ git diff master github/master
 	Vue项目详情页 - 公用图片画廊组件拆分
 		1.src-common-gallary-Gallary.vue在common下面存放全局公用的组件，如果Gallary.vue变得很大的话，可以接着拆分成小的组件
 		
+	 Vue项目详情页 - 实现Header渐隐渐显效果
+		
 		 
 		
 		
