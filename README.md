@@ -553,7 +553,9 @@ git diff master github/master
 		1.pages-detail-components-Banner.vue
 		3.去http://iconfont.cn/manage/index?manage_type=myprojects&projectId=767957下载字体库
 		 将eot svg ttf woff替换src-assets-styles-iconfont下面的四个
-		4.src-common-gallary-Gallary.vue在common下面存放全局公用的组件，如果Gallary.vue变得很大的话，可以接着拆分成小的组件
+		 
+	Vue项目详情页 - 公用图片画廊组件拆分
+		1.src-common-gallary-Gallary.vue在common下面存放全局公用的组件，如果Gallary.vue变得很大的话，可以接着拆分成小的组件
 		
 		 
 		
