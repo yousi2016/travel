@@ -557,7 +557,24 @@ git diff master github/master
 	Vue项目详情页 - 公用图片画廊组件拆分
 		1.src-common-gallary-Gallary.vue在common下面存放全局公用的组件，如果Gallary.vue变得很大的话，可以接着拆分成小的组件
 		
-	 Vue项目详情页 - 实现Header渐隐渐显效果
+	Vue项目详情页 - 实现Header渐隐渐显效果
+	
+	Vue项目详情页 - 使用递归组件实现详情页列表
+		1.pages-detail-components-List.vue
+		2.如果样式报错
+		<style lang="stylus" scoped>
+			.item-title-icon
+				position: relative
+				left: .06rem
+				top: .06rem
+				display: inline-block
+				width: .36rem
+				height: .36rem
+				background: url(http://s.qunarzz.com/piao/image/touch/sight/detail.png) 0 -.45rem no-repeat
+				margin-right: .1rem
+				background-size: .4rem 3rem
+  	
+		
 		
 		 
 		
