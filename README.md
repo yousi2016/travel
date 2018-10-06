@@ -573,6 +573,8 @@ git diff master github/master
 				background: url(http://s.qunarzz.com/piao/image/touch/sight/detail.png) 0 -.45rem no-repeat
 				margin-right: .1rem
 				background-size: .4rem 3rem
+	Vue项目详情页 - 动态获取详情页面数据
+		1.
   	
 		
 		
