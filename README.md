@@ -576,7 +576,9 @@ git diff master github/master
 	Vue项目详情页 - 动态获取详情页面数据
 		1.
   	
-		
+	Vue项目详情页 - 在项目中加入基础动画
+		1.src->common-> fade（渐隐渐显的动画组件）
+			
 		
 		 
 		
