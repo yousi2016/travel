@@ -653,6 +653,8 @@ git diff master github/master
     assetsPublicPath: '/',//回复根目录
     
     现在代码是完整的了，然后提交一份到github和gitee
+    
+  10-5 Vue项目的联调测试上线 - 课程总结与后续学习指南
 
    		
 	
