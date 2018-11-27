@@ -12,10 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
     	'/api': {
-    		target: 'http://localhost:8080',
-    		pathRewrite: {
-    			'^/api': '/static/mock'
-    		}
+    		target: 'http://localhost:80'
     	}
     },
 
@@ -49,7 +46,7 @@ module.exports = {
 
     cssSourceMap: true
   },
-
+	//打包部分
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../dist/index.html'),

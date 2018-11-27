@@ -578,6 +578,85 @@ git diff master github/master
   	
 	Vue项目详情页 - 在项目中加入基础动画
 		1.src->common-> fade（渐隐渐显的动画组件）
+	10-1 Vue项目的联调测试上线 - 项目前后端联调
+		首先在本地配置一个服务器，调用本地服务器数据，默认端口：80，
+	 打开config->index.js修改这里即可
+	 proxyTable: {
+    	'/api': {
+    		target: 'http://localhost:80'
+    	}
+    },
+	10-2 Vue项目的联调测试上线 - 真机测试
+	阻止touchstart的默认行为
+	@touchstart.prevent='handleTouchStart'
+	解决部分手机显示白屏的问题：
+	npm install babel-polyfill --save
+	
+	10-3 Vue项目的联调测试上线 - 打包上线
+	
+	先运行npm run build，然后生成dist文件夹，最后将里面的文件放到后台服务器根目录下即可
+	打包完成会显示：
+	Build complete.
+  Tip: built files are meant to be served over an HTTP server.
+  Opening index.html over file:// won't work.
+
+	如果要在后台服务器根目录下新建文件夹project
+	需要在config-》index.js下修改下面的即可
+	//打包部分
+  build: {
+    // Template for index.html
+    index: path.resolve(__dirname, '../dist/index.html'),
+
+    // Paths
+    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/project',
+  重新运行npm run build，然后生成dist文件夹然后将dis改成project，最后将project放到后台服务器根目录下即可
+  
+  最后用locahost/project访问即可
+  
+   10-4 Vue项目的联调测试上线 - 异步组件实现按需加载（可以提升vue项目性能）
+   	1.前端代码入口文件：dist->index.html
+   	2.dist>css>app.c8faa640414b8bfca1588f7f8b0775e1.css.map方便调试压缩过的代码，然而真正有用的，所有页面都调用的是这个：app.c8faa640414b8bfca1588f7f8b0775e1.css
+   	3.同理js文件也是：
+   		app.f6ed7d0657aa32062e80.js： 所有页面的业务逻辑代码
+   		manifest.36e135f1934381a46794.js: webpack打包生成的一个配置文件（不需要关心）
+   		vendor.37a2c504d4dd193e6a17.js： 放的是所有页面和组件公用的代码，webpack会打包到这个文件中
+   	4.src->router>index.js修改这里：同步加载变成异步加载
+	   	export default new Router({
+			  routes: [{
+			      path: '/',
+			      name: 'Home',
+			      component: Home
+			   },{
+			      path: '/city',
+			      name: 'City',
+			      component: City
+			   },{
+			      path: '/detail/:id',
+			      name: 'Detail',
+			      component: Detail
+			   }],
+			  scrollBehavior (to, from, savedPosition) {
+				  return { x: 0, y: 0 }
+				}
+			})
+			只有app.js文件很大时候才使用异步组件，否则不用
+		5.config->index.js
+		build: {
+    // Template for index.html
+    index: path.resolve(__dirname, '../dist/index.html'),
+
+    // Paths
+    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',//回复根目录
+    
+    现在代码是完整的了，然后提交一份到github和gitee
+
+   		
+	
+	
 			
 		
 		 
